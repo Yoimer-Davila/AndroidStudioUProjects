@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="question_separator">\\$</string>
+    <string-array name="questions">
+        <item>
+            <group>
+                <item>Is Lima the capital of Peru?\\$</item>
+                <item>true</item>
+            </group>
+        </item>
+
+        <item>
+            <group>
+                <item>Is Tumbes the capital of Chile?\\$</item>
+                <item>false</item>
+            </group>
+        </item>
+
+        <item>
+            <group>
+                <item>Is Bogota the capital of Colombia?\\$</item>
+                <item>true</item>
+            </group>
+        </item>
+
+        <item>
+            <group>
+                <item>Is Mexico the capital of Unite States?\\$</item>
+                <item>false</item>
+            </group>
+        </item>
+
+        <item>
+            <group>
+                <item>Is Tokio the capital of Japan?\\$</item>
+                <item>true</item>
+            </group>
+        </item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WeekFourGeoQuizApplication</string>
+    <string name="question_text">Question</string>
+    <string name="true_text">True</string>
+    <string name="false_text">False</string>
+    <string name="correct_message">Great, it\'s correct</string>
+    <string name="wrong_message">Ups, it\'s incorrect</string>
+    <string name="next">Next</string>
+    <string name="score">Score: %d</string>
+    <string name="lives">Lifes: %d</string>
+    <string name="end_message">%s\n Your score is: %d</string>
+</resources>

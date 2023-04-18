@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WeakFourCameraPermissionApplication</string>
+    <string name="camera_permission">Verify camera permission</string>
+</resources>
