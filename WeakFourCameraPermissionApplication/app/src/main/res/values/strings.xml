@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">WeakFourCameraPermissionApplication</string>
     <string name="camera_permission">Verify camera permission</string>
+    <string name="already_camera_permission">Camera permission already obtained</string>
+    <string name="already_rejected_camera_permission">Camera permission already rejected. Turn on.</string>
+    <string name="accept_camera_permission">Accept the camera permission</string>
+    <string name="accepted_camera_permission">Camera permission accepted</string>
+    <string name="rejected_camera_permission">Camera permission rejected</string>
 </resources>

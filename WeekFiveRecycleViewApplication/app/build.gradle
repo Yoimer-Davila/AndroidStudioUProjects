@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.yoimer.android.weakfourcamerapermissionapplication'
+    namespace 'com.yoimer.weekfiverecycleviewapplication'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.yoimer.android.weakfourcamerapermissionapplication"
+        applicationId "com.yoimer.weekfiverecycleviewapplication"
         minSdk 28
         targetSdk 33
         versionCode 1
