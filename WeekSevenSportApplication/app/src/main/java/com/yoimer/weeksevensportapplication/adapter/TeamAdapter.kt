@@ -11,6 +11,7 @@ import com.yoimer.weeksevensportapplication.databinding.PrototypeTeamBinding
 import com.yoimer.weeksevensportapplication.models.Team
 
 class TeamAdapter(private val teams: List<Team>, private val itemClickListener: OnItemClickListener): Adapter<TeamAdapter.TeamHolder>() {
+
     class TeamHolder(val binding: PrototypeTeamBinding) : ViewHolder(binding.root) {
 
         fun bind(team: Team) {

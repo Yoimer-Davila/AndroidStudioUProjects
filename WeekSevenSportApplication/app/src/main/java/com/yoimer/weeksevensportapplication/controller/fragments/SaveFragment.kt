@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.yoimer.weeksevensportapplication.R
 import com.yoimer.weeksevensportapplication.adapter.TeamAdapter
 import com.yoimer.weeksevensportapplication.database.TeamDatabase
 import com.yoimer.weeksevensportapplication.databinding.FragmentSaveBinding
@@ -29,7 +28,7 @@ class SaveFragment : Fragment(), TeamAdapter.OnItemClickListener {
         super.onViewCreated(view, savedInstanceState)
         teams = TeamDatabase
             .instance(view.context)
-            .dao()
+            .teamDao()
             .getAllTeams()
         binding.rvTeamSave.layoutManager = LinearLayoutManager(context)
         binding.rvTeamSave.adapter = TeamAdapter(teams, this)

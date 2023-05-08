@@ -33,7 +33,7 @@ class TeamDetailsActivity : AppCompatActivity() {
         binding.fbSave.setOnClickListener {
             TeamDatabase
                 .instance(this)
-                .dao()
+                .teamDao()
                 .insertTeam(team)
             finish()
         }

@@ -9,7 +9,7 @@ import com.yoimer.weeksevensportapplication.models.Team
 @Database(entities = [Team::class], version = 1)
 abstract class TeamDatabase : RoomDatabase() {
 
-    abstract fun dao(): TeamDao
+    abstract fun teamDao(): TeamDao
 
     companion object {
         private var INSTANCE: TeamDatabase? = null
