@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WeekSixRoomDatabaseAplication</string>
+    <string name="insert_name">Insert name</string>
+    <string name="insert_phone_number">Insert phone number</string>
+</resources>
