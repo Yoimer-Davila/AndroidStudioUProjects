@@ -42,7 +42,7 @@ class TeamAdapter(private val teams: List<Team>, private val itemClickListener: 
     }
 
 
-    interface OnItemClickListener {
+    interface   OnItemClickListener {
         fun onItemClick(team: Team)
     }
 

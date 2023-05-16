@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppSuperZound</string>
+    
+    <string name="album_thumbnail">Album thumbnail</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="album_rating">Album rating</string>
+    <string name="super_zound_application">Super Zound Application</string>
+    <string name="branding_image">Branding image</string>
+</resources>
