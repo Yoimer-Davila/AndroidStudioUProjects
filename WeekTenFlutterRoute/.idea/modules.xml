@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/week_ten_flutter_route/week_ten_flutter_route.iml" filepath="$PROJECT_DIR$/week_ten_flutter_route/week_ten_flutter_route.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week_ten_flutter_route/android/week_ten_flutter_route_android.iml" filepath="$PROJECT_DIR$/week_ten_flutter_route/android/week_ten_flutter_route_android.iml" />
+    </modules>
+  </component>
+</project>
