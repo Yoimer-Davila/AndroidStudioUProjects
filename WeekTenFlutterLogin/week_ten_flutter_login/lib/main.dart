@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,18 +46,45 @@ class _LoginPageState extends State<LoginPage> {
                 size: 100.0,
               ),
               Form(
-                child: Column(
-                  children: <Widget>[
-                    TextFormField(
-                      decoration: const InputDecoration(labelText: "Enter your e-mail"),
-                      keyboardType: TextInputType.emailAddress,
-                    ),
-                    TextFormField(
-                      decoration: const InputDecoration(labelText: "Enter your password"),
-                      keyboardType: TextInputType.text,
-                      obscureText: true,
+                child: Theme(
+                  data: ThemeData(
+                    brightness: Brightness.dark,
+                    primarySwatch: Colors.lightBlue,
+                    inputDecorationTheme: const InputDecorationTheme(
+                      labelStyle: TextStyle(
+                        color: Colors.lightBlueAccent,
+                        fontSize: 18.0
+                      )
                     )
-                  ],
+                  ),
+                  child: Container(
+                    padding: const EdgeInsets.all(25.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        TextFormField(
+                          decoration: const InputDecoration(labelText: "Enter your e-mail"),
+                          keyboardType: TextInputType.emailAddress,
+                        ),
+                        TextFormField(
+                          decoration: const InputDecoration(labelText: "Enter your password"),
+                          keyboardType: TextInputType.text,
+                          obscureText: true,
+                        ),
+                        MaterialButton(
+                          height: 35.0,
+                          minWidth: 70.0,
+                          color: Colors.lightBlueAccent,
+                          textColor: Colors.white,
+                          onPressed: () {
+
+                          },
+                          splashColor: Colors.black12,
+                          child: const Icon(FontAwesomeIcons.rightToBracket),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
               )
             ],
