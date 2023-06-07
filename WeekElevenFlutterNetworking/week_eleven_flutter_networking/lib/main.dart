@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:week_eleven_flutter_networking/contact.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,6 +46,12 @@ class _MyContactListState extends State<MyContactList> {
     makeRequest();
   }
 
+  void toDetails(BuildContext context, Contact contact) {
+    Navigator.of(context).push(MaterialPageRoute(
+      builder: (context) => ContactDetails(contact: contact)
+    ));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,16 +61,51 @@ class _MyContactListState extends State<MyContactList> {
       body: ListView.builder(
         itemCount: data?.length ?? 0,
         itemBuilder: (context, index) {
+          final contact = Contact(data?[index]);
           return ListTile(
-            title: Text(data?[index]['name']['first']),
-            subtitle: Text(data?[index]['cell']),
+            title: Text(contact.name.first),
+            subtitle: Text(contact.cell),
             leading: CircleAvatar(
-              backgroundImage: NetworkImage(data?[index]['picture']['thumbnail']),
+              backgroundImage: NetworkImage(contact.picture.thumbnail),
             ),
+            onTap: () => toDetails(context, contact),
           );
         },
       ),
     );
   }
 }
+
+class ContactDetails extends StatelessWidget {
+  final Contact contact;
+  const ContactDetails({super.key, required this.contact});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Contact details"),
+      ),
+      body: Center(
+        child: Container(
+          width: 200,
+          height: 200,
+          decoration: BoxDecoration(
+            color: Colors.lightBlueAccent,
+            image: DecorationImage(
+              image: NetworkImage(contact.picture.large),
+              fit: BoxFit.cover
+            ),
+            borderRadius: const BorderRadius.all(Radius.circular(100)),
+            border: Border.all(
+              color: Colors.lightBlueAccent,
+              width: 2
+            )
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 
